@@ -25,7 +25,7 @@ echo deleting useless files
 rmdir /s /q "C:\Program Files (x86)\BraveSoftware" >nul 2>&1
 rmdir /s /q "%userprofile%\AppData\Local\BraveSoftware\Update" >nul 2>&1
 rmdir /s /q "C:\Program Files\BraveSoftware\Brave-Browser\Application\SetupMetrics" >nul 2>&1
-cd /d "C:\Program Files\BraveSoftware\Brave-Browser\Application\1*"
+cd "C:\Program Files\BraveSoftware\Brave-Browser\Application\1*"
 rmdir /s /q "Installer" >nul 2>&1
 rmdir /s /q "BraveVpnWireguardService" >nul 2>&1
 rmdir /s /q "Extensions" >nul 2>&1
@@ -33,7 +33,7 @@ rmdir /s /q "IwaKeyDistribution" >nul 2>&1
 rmdir /s /q "PrivacySandboxAttestationsPreloaded" >nul 2>&1
 rmdir /s /q "MEIPreload" >nul 2>&1
 rmdir /s /q "C:\ProgramData\BraveSoftware" >nul 2>&1
-cd /d "C:\Program Files\BraveSoftware\Brave-Browser\Application\1*"
+cd "C:\Program Files\BraveSoftware\Brave-Browser\Application\1*"
 del "notification_helper.exe" >nul 2>&1
 del "eventlog_provider.dll" >nul 2>&1
 del "chrome_pwa_launcher.exe" >nul 2>&1
@@ -45,11 +45,11 @@ del "libGLESv2.dll" >nul 2>&1
 del "d3dcompiler_47.dll" >nul 2>&1
 del "dxcompiler.dll" >nul 2>&1
 del "dxil.dll" >nul 2>&1
-cd /d "C:\Program Files\BraveSoftware\Brave-Browser\Application"
+cd "C:\Program Files\BraveSoftware\Brave-Browser\Application"
 del "chrmstp.exe" /a /s >nul 2>&1
 
 :: Locales
-cd /d "C:\Program Files\BraveSoftware\Brave-Browser\Application\1*" >nul 2>&1
+cd "C:\Program Files\BraveSoftware\Brave-Browser\Application\1*" >nul 2>&1
 copy "Locales\en-US.pak" "C:\Program Files\BraveSoftware\Brave-Browser\Application" >nul 2>&1
 rmdir /s /q "Locales" >nul 2>&1
 mkdir "Locales" >nul 2>&1

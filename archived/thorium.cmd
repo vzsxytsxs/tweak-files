@@ -1,6 +1,6 @@
 @echo off
 
-cd /d %localappdata%\thorium\application\1* 
+cd %localappdata%\thorium\application\1* 
 del "chrome_wer.dll" >nul 2>&1
 del "notification_helper.exe" >nul 2>&1
 del "chrome_pwa_launcher.exe" >nul 2>&1
